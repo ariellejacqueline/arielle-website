@@ -3,51 +3,65 @@
  <head>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playfair+Display&display=swap" rel="stylesheet">
   <style>
+   ul.navigation {
+     position: fixed;
+     overflow: hidden; 
+     width: 100%;
+   }
+   li.navigation {
+     display: inline;
+   }
    .logo {
-   font-family: 'Montserrat', sans-serif;
-   height: 100px;
-   width: 225px;
-   margin: 50px;
-   border: solid #000;
-   padding: 1px 10px 20px 20px;
+     font-family: 'Montserrat', sans-serif;
+     height: 100px;
+     width: 225px;
+     margin: 50px;
+     border: solid #000;
+     padding: 1px 10px 20px 20px;
    }
    .title {
-   font-family: 'Playfair Display', serif;
-   font-size: 30px;
-   margin: 50px;
+     font-family: 'Playfair Display', serif;
+     font-size: 30px;
+     margin: 50px;
    }
    h2 {
-   color: #656565;
-   font-family: 'Montserrat', sans-serif;
-   margin: 50px, 500px;
+     color: #656565;
+     font-family: 'Montserrat', sans-serif;
+     margin: 50px;
+     width: 900px;
+   }
+   .insta {
+     color: #656565;
    }
    .gallery {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   text-align: center;
-   color: #323232;
-   width: 185px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     text-align: center;
+     color: #323232;
+     width: 185px;
    }
    .about {
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   color: #323232;
-   width: 185px;
+     font-family: 'Montserrat', sans-serif;
+     font-size: 20px;
+     color: #323232;
+     width: 185px;
    }
    .gallery:hover {
-   background: #323232;
-   color: #FFF;
+     background: #323232;
+     color: #FFF;
    }
    .about:hover {
-   background: #323232;
-   color: #FFF
+     background: #323232;
+     color: #FFF
    }
   </style>
  </head>
  <body>
   <nav class="navigation">
-   <a class="gallery" href="index.html">GALLERY</a>
-   <a class="about" href="about.html">ABOUT/CONTACT</a>
+   <ul class="navigation">
+    <li><a class="gallery" href="index.html">GALLERY</a>
+    <li><a class="about" href="about.html">ABOUT/CONTACT</a>
+   </ul>
   </nav>
   <div class="logo">
    <h1>ARIELLE JACQUELINE</h1>
@@ -55,6 +69,6 @@
   <div class="title">
    <h1>About the Artist</h1>
   </div>
-  <h2>Arielle was born and raised in the Bay Area. She likes to do illustrations and paintings of landscapes. Arielle has been interested in art from a young age and has developed her skills during her time in high school. <br><br>To see more of Arielle's art or to get in touch, follow <a href="https://www.instagram.com/arielle.jacqueline/" target="_blank">@arielle.jacqueline</a> on Instagram.</h2>
+  <h2>Arielle was born and raised in the Bay Area. She likes to do illustrations and paintings of landscapes. Arielle has been interested in art from a young age and has developed her skills during her time in high school. <br><br>To see more of Arielle's art or to get in touch, follow <a class="insta" href="https://www.instagram.com/arielle.jacqueline/" target="_blank">@arielle.jacqueline</a> on Instagram.</h2>
   </body>
 </html>
